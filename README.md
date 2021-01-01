@@ -1,1 +1,2 @@
-# Freshwork_Assignment
+# Freshwork Assignment
+### Steps to run the project
