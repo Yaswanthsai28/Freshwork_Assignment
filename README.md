@@ -8,6 +8,12 @@ Client Server model is used for communication and to provide Synchronization.
 
 JSON is used for converting String to Object and Viceversa.
 
+### Constraints
+
+1) Key can only be string with atmost 32 chars.
+
+2) Value can only be in JSON with maximum of 16KB.
+
 ### Steps to run the project
 
 1) Open Command Prompt.
