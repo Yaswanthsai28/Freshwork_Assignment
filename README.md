@@ -12,12 +12,12 @@ JSON for converting String to Object and Viceversa.
 
 1) Open Command Prompt
 
-2) Run server.py using the below command
+2) Run server.py using the below command.
 > python server.py
 
-3) Run client.py using the below command
+3) Run client.py using the below command.
 > python client.py
 
-4) Select the CRD(Create,Read,Delete) Operations in Client Side
+4) Select the CRD(Create,Read,Delete) Operations in Client Side.
 
-5) Provide the required input for performing the operations
+5) Provide the required input for performing the operations.
