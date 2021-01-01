@@ -4,13 +4,13 @@
 
 Python and Sqlite3 are used for implementing this project.
 
-Client server model for communication and to provide Synchronization.
+Client Server model is used for communication and to provide Synchronization.
 
-JSON for converting String to Object and Viceversa.
+JSON is used for converting String to Object and Viceversa.
 
 ### Steps to run the project
 
-1) Open Command Prompt
+1) Open Command Prompt.
 
 2) Run server.py using the below command.
 > python server.py
