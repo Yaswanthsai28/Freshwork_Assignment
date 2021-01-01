@@ -22,11 +22,12 @@ while(True):
 		if (len(val) > 16*1024):
 			print("\nerr: Value is larger than 16KB.\n")
 			continue
-		try:
-			json.loads(val)
-		except:
-			print("\nerr: Value can only be in JSON.\n")
-			continue
+		
+		try: json.loads(val)
+		except: print("\nerr: Value can only be in JSON.\n"); continue;
+
+		try: json.loads(key); print("\nerr: Key can only be in String.\n"); continue;
+		except: pass
 
 		s.send(json.dumps({"type": "create", "data": [key, val]}).encode('utf-8'))
 		print("\n"+s.recv(1024).decode("utf-8")+"\n")

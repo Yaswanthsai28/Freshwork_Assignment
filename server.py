@@ -89,7 +89,10 @@ def deleteData(c, data):
 		write = False
 
 
+print("[Server Started]\n")
+
 c, addr = s.accept()
+
 while True:
 
 	data = c.recv(1024)
@@ -111,3 +114,5 @@ while True:
 
 c.close()
 con.close()
+
+print("\n[Server Stopped]\n")
