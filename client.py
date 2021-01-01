@@ -16,6 +16,18 @@ while(True):
 		key = input("Enter Key: ")
 		val = input("Enter Value: ")
 
+		if (len(key) > 32):
+			print("\nerr: Key is larger than 32 chars.\n")
+			continue
+		if (len(val) > 16*1024):
+			print("\nerr: Value is larger than 16KB.\n")
+			continue
+		try:
+			json.loads(val)
+		except:
+			print("\nerr: Value can only be in JSON.\n")
+			continue
+
 		s.send(json.dumps({"type": "create", "data": [key, val]}).encode('utf-8'))
 		print("\n"+s.recv(1024).decode("utf-8")+"\n")
 
